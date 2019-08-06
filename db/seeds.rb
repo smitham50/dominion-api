@@ -105,3 +105,190 @@ def seed_duchies
   end
 end
 seed_duchies
+
+#Create 8 Provinces
+def seed_provinces
+  8.times do
+    puts "Seeding Province"
+    Card.create(
+      name: "Province", 
+      picture: "../../card-images/province.jpg",
+      cost: 8,
+      card_type: "Victory",
+      triggers: nil,
+      victory_points: 6,
+      value: nil
+    )
+  end
+end
+seed_provinces
+
+#Create 12 Cellars
+def seed_cellars
+  12.times do
+    puts "Seeding Cellar"
+    Card.create(
+      name: "Cellar", 
+      picture: "../../card-images/cellar.jpg",
+      cost: 2,
+      card_type: "Action",
+      triggers: ["+1 Action", "Cycle"],
+      victory_points: nil,
+      value: nil
+    )
+  end
+end
+seed_cellars
+
+#Create 12 Moats
+def seed_moats
+  12.times do
+    puts "Seeding Moat"
+    Card.create(
+      name: "Moat", 
+      picture: "../../card-images/moat.jpg",
+      cost: 2,
+      card_type: "Action-Reaction",
+      triggers: ["+2 Cards"],
+      victory_points: nil,
+      value: nil
+    )
+  end
+end
+seed_moats
+
+#Create 12 Woodcutters
+def seed_woodcutters
+  12.times do
+    puts "Seeding Woodcutter"
+    Card.create(
+      name: "Woodcutter", 
+      picture: "../../card-images/woodcutter.jpg",
+      cost: 3,
+      card_type: "Action",
+      triggers: ["+1 Buy", "+2 Wallet"],
+      victory_points: nil,
+      value: nil
+    )
+  end
+end
+seed_woodcutters
+
+#Create 12 Workshop
+def seed_workshops
+  12.times do
+    puts "Seeding Workshop"
+    Card.create(
+      name: "Workshop", 
+      picture: "../../card-images/workshop.jpg",
+      cost: 3,
+      card_type: "Action",
+      triggers: ["Gain Supply Card"],
+      victory_points: nil,
+      value: nil
+    )
+  end
+end
+seed_workshops
+
+#Create 12 Villages
+def seed_villages
+  12.times do
+    puts "Seeding Village"
+    Card.create(
+      name: "Village", 
+      picture: "../../card-images/village.jpg",
+      cost: 3,
+      card_type: "Action",
+      triggers: ["+1 Card", "+2 Actions"],
+      victory_points: nil,
+      value: nil
+    )
+  end
+end
+seed_villages
+
+#Create 12 Smithies
+def seed_smithies
+  12.times do
+    puts "Seeding Smithy"
+    Card.create(
+      name: "Smithy", 
+      picture: "../../card-images/smithy.jpg",
+      cost: 4,
+      card_type: "Action",
+      triggers: ["+3 Cards"],
+      victory_points: nil,
+      value: nil
+    )
+  end
+end
+seed_smithies
+
+#Create 12 Remodels
+def seed_remodels
+  12.times do
+    puts "Seeding Remodel"
+    Card.create(
+      name: "Remodel", 
+      picture: "../../card-images/remodel.jpg",
+      cost: 4,
+      card_type: "Action",
+      triggers: ["Remodel"],
+      victory_points: nil,
+      value: nil
+    )
+  end
+end
+seed_remodels
+
+#Create 12 Militias
+def seed_militias
+  12.times do
+    puts "Seeding Militia"
+    Card.create(
+      name: "Militia", 
+      picture: "../../card-images/militia.jpg",
+      cost: 4,
+      card_type: "Action",
+      triggers: ["Attack", "+2 Wallet"],
+      victory_points: nil,
+      value: nil
+    )
+  end
+end
+seed_militias
+
+#Create 12 Markets
+def seed_markets
+  12.times do
+    puts "Seeding Market"
+    Card.create(
+      name: "Market", 
+      picture: "../../card-images/market.jpg",
+      cost: 5,
+      card_type: "Action",
+      triggers: ["+1 Card", "+1 Action", "+1 Buy", "+1 Wallet"],
+      victory_points: nil,
+      value: nil
+    )
+  end
+end
+seed_markets
+
+#Create 12 Mines
+def seed_mines
+  12.times do
+    puts "Seeding Mine"
+    Card.create(
+      name: "Mine", 
+      picture: "../../card-images/mine.jpg",
+      cost: 5,
+      card_type: "Action",
+      triggers: ["Mine"],
+      victory_points: nil,
+      value: nil
+    )
+  end
+end
+seed_mines
