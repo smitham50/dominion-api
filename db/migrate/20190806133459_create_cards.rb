@@ -3,7 +3,6 @@ class CreateCards < ActiveRecord::Migration[5.2]
     create_table :cards do |t|
       t.string :name
       t.string :picture
-      t.string :description
       t.integer :cost
       t.string :card_type
       t.string :triggers, array: true, default: []

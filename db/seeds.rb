@@ -8,7 +8,7 @@
 # value, integer
 
 # CARD BREAKDOWN:
-# 130 Treasure Cards (60 copper, 40 silver, 30 gold)
+# 130 Treasure Cards (34 copper, 20 silver, 20 gold)
 # 30 Victory Cards (14 estates, 8 duchies, 8 provinces)
 # 12 Cellar
 # 12 Moat
@@ -23,11 +23,11 @@
 
 # Create 60 Coppers
 def seed_coppers
-  60.times do
+  34.times do
     puts "Seeding Copper"
     Card.create(
       name: "Copper", 
-      picture: "../../card-images/copper.jpg",
+      picture: "https://vignette.wikia.nocookie.net/dominioncg/images/b/b1/Copper2.jpg/revision/latest?cb=20100210171018",
       cost: 0,
       card_type: "Treasure",
       triggers: nil,
@@ -40,11 +40,11 @@ seed_coppers
 
 #Create 40 Silvers
 def seed_silvers
-  40.times do
+  20.times do
     puts "Seeding Silver"
     Card.create(
       name: "Silver", 
-      picture: "../../card-images/silver.jpg",
+      picture: "https://vignette.wikia.nocookie.net/dominioncg/images/b/b4/Silver2.jpg/revision/latest?cb=20100210171121",
       cost: 3,
       card_type: "Treasure",
       triggers: nil,
@@ -57,11 +57,11 @@ seed_silvers
 
 #Create 30 Golds
 def seed_golds
-  30.times do
+  20.times do
     puts "Seeding Gold"
     Card.create(
       name: "Gold", 
-      picture: "../../card-images/gold.jpg",
+      picture: "https://www.ultraboardgames.com/dominion/gfx/gold.jpg",
       cost: 6,
       card_type: "Treasure",
       triggers: nil,
@@ -78,7 +78,7 @@ def seed_estates
     puts "Seeding Estate"
     Card.create(
       name: "Estate", 
-      picture: "../../card-images/estate.jpg",
+      picture: "https://dominionstrategy.files.wordpress.com/2013/01/estate.jpg",
       cost: 2,
       card_type: "Victory",
       triggers: nil,
@@ -95,7 +95,7 @@ def seed_duchies
     puts "Seeding Duchy"
     Card.create(
       name: "Duchy", 
-      picture: "../../card-images/duchy.jpg",
+      picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMdt2Ta3gmOPntSSYtw2YJbMEzgBpSZwS0qTnve0zZ30gwBafW",
       cost: 5,
       card_type: "Victory",
       triggers: nil,
@@ -112,7 +112,7 @@ def seed_provinces
     puts "Seeding Province"
     Card.create(
       name: "Province", 
-      picture: "../../card-images/province.jpg",
+      picture: "https://dominionstrategy.files.wordpress.com/2011/03/province.jpg",
       cost: 8,
       card_type: "Victory",
       triggers: nil,
@@ -129,10 +129,10 @@ def seed_cellars
     puts "Seeding Cellar"
     Card.create(
       name: "Cellar", 
-      picture: "../../card-images/cellar.jpg",
+      picture: "https://dominionstrategy.files.wordpress.com/2010/11/cellar.jpg",
       cost: 2,
       card_type: "Action",
-      triggers: ["+1 Action", "Cycle"],
+      triggers: ["+1ACTION", "CELLAR"],
       victory_points: nil,
       value: nil
     )
@@ -146,10 +146,10 @@ def seed_moats
     puts "Seeding Moat"
     Card.create(
       name: "Moat", 
-      picture: "../../card-images/moat.jpg",
+      picture: "https://vignette.wikia.nocookie.net/dominioncg/images/f/fe/Moat.jpg/revision/latest?cb=20100213191143",
       cost: 2,
-      card_type: "Action-Reaction",
-      triggers: ["+2 Cards"],
+      card_type: "Action",
+      triggers: ["+2CARDS"],
       victory_points: nil,
       value: nil
     )
@@ -163,10 +163,10 @@ def seed_woodcutters
     puts "Seeding Woodcutter"
     Card.create(
       name: "Woodcutter", 
-      picture: "../../card-images/woodcutter.jpg",
+      picture: "https://dominionstrategy.files.wordpress.com/2010/12/woodcutter.jpg?w=584",
       cost: 3,
       card_type: "Action",
-      triggers: ["+1 Buy", "+2 Wallet"],
+      triggers: ["+1BUY", "+2WALLET"],
       victory_points: nil,
       value: nil
     )
@@ -174,16 +174,16 @@ def seed_woodcutters
 end
 seed_woodcutters
 
-#Create 12 Workshop
+#Create 12 Workshops
 def seed_workshops
   12.times do
     puts "Seeding Workshop"
     Card.create(
       name: "Workshop", 
-      picture: "../../card-images/workshop.jpg",
+      picture: "https://vignette.wikia.nocookie.net/dominioncg/images/5/50/Workshop.jpg/revision/latest?cb=20100213191621",
       cost: 3,
       card_type: "Action",
-      triggers: ["Gain Supply Card"],
+      triggers: ["GAIN_CARD"],
       victory_points: nil,
       value: nil
     )
@@ -197,10 +197,10 @@ def seed_villages
     puts "Seeding Village"
     Card.create(
       name: "Village", 
-      picture: "../../card-images/village.jpg",
+      picture: "https://dominionstrategy.files.wordpress.com/2011/01/village.jpg",
       cost: 3,
       card_type: "Action",
-      triggers: ["+1 Card", "+2 Actions"],
+      triggers: ["+1CARD", "+2ACTIONS"],
       victory_points: nil,
       value: nil
     )
@@ -214,10 +214,10 @@ def seed_smithies
     puts "Seeding Smithy"
     Card.create(
       name: "Smithy", 
-      picture: "../../card-images/smithy.jpg",
+      picture: "https://vignette.wikia.nocookie.net/dominioncg/images/3/36/Smithy.jpg/revision/latest?cb=20100210165849",
       cost: 4,
       card_type: "Action",
-      triggers: ["+3 Cards"],
+      triggers: ["+3CARDS"],
       victory_points: nil,
       value: nil
     )
@@ -231,10 +231,10 @@ def seed_remodels
     puts "Seeding Remodel"
     Card.create(
       name: "Remodel", 
-      picture: "../../card-images/remodel.jpg",
+      picture: "http://www.dominiondeck.com/sites/default/files/imagecache/cards-landing/cards/remodel.jpg",
       cost: 4,
       card_type: "Action",
-      triggers: ["Remodel"],
+      triggers: ["REMODEL"],
       victory_points: nil,
       value: nil
     )
@@ -248,10 +248,10 @@ def seed_militias
     puts "Seeding Militia"
     Card.create(
       name: "Militia", 
-      picture: "../../card-images/militia.jpg",
+      picture: "https://vignette.wikia.nocookie.net/dominioncg/images/a/a0/Militia.jpg/revision/latest?cb=20100210165354",
       cost: 4,
       card_type: "Action",
-      triggers: ["Attack", "+2 Wallet"],
+      triggers: ["ATTACK", "+2WALLET"],
       victory_points: nil,
       value: nil
     )
@@ -265,10 +265,10 @@ def seed_markets
     puts "Seeding Market"
     Card.create(
       name: "Market", 
-      picture: "../../card-images/market.jpg",
+      picture: "https://dominionstrategy.files.wordpress.com/2010/11/market.jpg",
       cost: 5,
       card_type: "Action",
-      triggers: ["+1 Card", "+1 Action", "+1 Buy", "+1 Wallet"],
+      triggers: ["+1CARD", "+1ACTION", "+1BUY", "+1WALLET"],
       victory_points: nil,
       value: nil
     )
@@ -282,13 +282,25 @@ def seed_mines
     puts "Seeding Mine"
     Card.create(
       name: "Mine", 
-      picture: "../../card-images/mine.jpg",
+      picture: "http://dominionstrategy.files.wordpress.com/2010/12/mine.jpg",
       cost: 5,
       card_type: "Action",
-      triggers: ["Mine"],
+      triggers: ["MINE"],
       victory_points: nil,
       value: nil
     )
   end
 end
 seed_mines
+
+Card.create(
+      name: "Trash", 
+      picture: "http://wiki.dominionstrategy.com/images/thumb/e/ef/Trash.jpg/200px-Trash.jpg",
+      cost: nil,
+      card_type: nil,
+      triggers: nil,
+      victory_points: nil,
+      value: nil
+    )
+
+
