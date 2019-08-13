@@ -32,7 +32,8 @@ def seed_coppers
       card_type: "Treasure",
       triggers: nil,
       victory_points: nil,
-      value: 1
+      value: 1,
+      draw: 0
     )
   end
 end
@@ -49,7 +50,8 @@ def seed_silvers
       card_type: "Treasure",
       triggers: nil,
       victory_points: nil,
-      value: 2
+      value: 2,
+      draw: 0
     )
   end
 end
@@ -66,7 +68,8 @@ def seed_golds
       card_type: "Treasure",
       triggers: nil,
       victory_points: nil,
-      value: 3
+      value: 3,
+      draw: 0
     )
   end
 end
@@ -83,7 +86,8 @@ def seed_estates
       card_type: "Victory",
       triggers: nil,
       victory_points: 1,
-      value: nil
+      value: nil,
+      draw: 0
     )
   end
 end
@@ -100,7 +104,8 @@ def seed_duchies
       card_type: "Victory",
       triggers: nil,
       victory_points: 3,
-      value: nil
+      value: nil,
+      draw: 0
     )
   end
 end
@@ -117,7 +122,8 @@ def seed_provinces
       card_type: "Victory",
       triggers: nil,
       victory_points: 6,
-      value: nil
+      value: nil,
+      draw: 0
     )
   end
 end
@@ -134,7 +140,8 @@ def seed_cellars
       card_type: "Action",
       triggers: ["+1ACTION", "CELLAR"],
       victory_points: nil,
-      value: nil
+      value: nil,
+      draw: 0
     )
   end
 end
@@ -151,7 +158,8 @@ def seed_moats
       card_type: "Action",
       triggers: ["+2CARDS"],
       victory_points: nil,
-      value: nil
+      value: nil,
+      draw: 2
     )
   end
 end
@@ -168,7 +176,8 @@ def seed_woodcutters
       card_type: "Action",
       triggers: ["+1BUY", "+2WALLET"],
       victory_points: nil,
-      value: nil
+      value: nil,
+      draw: 0
     )
   end
 end
@@ -183,9 +192,10 @@ def seed_workshops
       picture: "https://vignette.wikia.nocookie.net/dominioncg/images/5/50/Workshop.jpg/revision/latest?cb=20100213191621",
       cost: 3,
       card_type: "Action",
-      triggers: ["GAIN_CARD"],
+      triggers: ["WORKSHOP"],
       victory_points: nil,
-      value: nil
+      value: nil,
+      draw: 0
     )
   end
 end
@@ -202,7 +212,8 @@ def seed_villages
       card_type: "Action",
       triggers: ["+1CARD", "+2ACTIONS"],
       victory_points: nil,
-      value: nil
+      value: nil,
+      draw: 1
     )
   end
 end
@@ -219,7 +230,8 @@ def seed_smithies
       card_type: "Action",
       triggers: ["+3CARDS"],
       victory_points: nil,
-      value: nil
+      value: nil,
+      draw: 3
     )
   end
 end
@@ -236,7 +248,8 @@ def seed_remodels
       card_type: "Action",
       triggers: ["REMODEL"],
       victory_points: nil,
-      value: nil
+      value: nil,
+      draw: 0
     )
   end
 end
@@ -253,7 +266,8 @@ def seed_militias
       card_type: "Action",
       triggers: ["ATTACK", "+2WALLET"],
       victory_points: nil,
-      value: nil
+      value: nil,
+      draw: 0
     )
   end
 end
@@ -270,7 +284,8 @@ def seed_markets
       card_type: "Action",
       triggers: ["+1CARD", "+1ACTION", "+1BUY", "+1WALLET"],
       victory_points: nil,
-      value: nil
+      value: nil,
+      draw: 1
     )
   end
 end
@@ -287,7 +302,8 @@ def seed_mines
       card_type: "Action",
       triggers: ["MINE"],
       victory_points: nil,
-      value: nil
+      value: nil,
+      draw: 0
     )
   end
 end
@@ -300,7 +316,8 @@ Card.create(
       card_type: nil,
       triggers: nil,
       victory_points: nil,
-      value: nil
+      value: nil,
+      draw: 0
     )
 
 

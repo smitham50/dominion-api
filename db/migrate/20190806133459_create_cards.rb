@@ -8,6 +8,7 @@ class CreateCards < ActiveRecord::Migration[5.2]
       t.string :triggers, array: true, default: []
       t.integer :victory_points
       t.integer :value
+      t.integer :draw
 
       t.timestamps
     end

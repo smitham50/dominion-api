@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_133459) do
     t.string "triggers", default: [], array: true
     t.integer "victory_points"
     t.integer "value"
+    t.integer "draw"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
