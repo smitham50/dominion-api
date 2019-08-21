@@ -122,7 +122,7 @@ def seed_provinces
     puts "Seeding Province"
     Card.create(
       name: "Province", 
-      description: "+ 6 Victory Points",
+      description: "+6 Victory Points",
       picture: "https://dominionstrategy.files.wordpress.com/2011/03/province.jpg",
       cost: 8,
       card_type: "Victory",
@@ -141,7 +141,7 @@ def seed_cellars
     puts "Seeding Cellar"
     Card.create(
       name: "Cellar", 
-      description: "+1 Action\nDiscard any number of cards from hand,\ndraw 1 for each discarded",
+      description: "+1 Action. Discard any number of cards from hand, draw 1 for each discarded",
       picture: "https://dominionstrategy.files.wordpress.com/2010/11/cellar.jpg",
       cost: 2,
       card_type: "Action",
@@ -160,7 +160,7 @@ def seed_moats
     puts "Seeding Moat"
     Card.create(
       name: "Moat", 
-      description: "Draw 2 cards\nPlay to defend against Militia",
+      description: "Draw 2 cards or defend against Militia",
       picture: "https://vignette.wikia.nocookie.net/dominioncg/images/f/fe/Moat.jpg/revision/latest?cb=20100213191143",
       cost: 2,
       card_type: "Action",
@@ -179,7 +179,7 @@ def seed_woodcutters
     puts "Seeding Woodcutter"
     Card.create(
       name: "Woodcutter", 
-      description: "+1 Buy\nAdd 2 to Wallet",
+      description: "+1 Buy, Add 2 to Wallet",
       picture: "https://dominionstrategy.files.wordpress.com/2010/12/woodcutter.jpg?w=584",
       cost: 3,
       card_type: "Action",
@@ -217,7 +217,7 @@ def seed_villages
     puts "Seeding Village"
     Card.create(
       name: "Village", 
-      description: "Draw 1 card\n+2 Actions",
+      description: "Draw 1 card, +2 Actions",
       picture: "https://dominionstrategy.files.wordpress.com/2011/01/village.jpg",
       cost: 3,
       card_type: "Action",
@@ -255,7 +255,7 @@ def seed_remodels
     puts "Seeding Remodel"
     Card.create(
       name: "Remodel", 
-      description: "Trash card from hand,\ngain card from supply costing up to 2 more",
+      description: "Trash card from hand, gain card from supply costing up to 2 more",
       picture: "http://www.dominiondeck.com/sites/default/files/imagecache/cards-landing/cards/remodel.jpg",
       cost: 4,
       card_type: "Action",
@@ -274,7 +274,7 @@ def seed_militias
     puts "Seeding Militia"
     Card.create(
       name: "Militia", 
-      description: "Opponent must discard down to 3 or play Moat",
+      description: "Add 2 to Wallet. Opponent must discard down to 3 or play Moat",
       picture: "https://vignette.wikia.nocookie.net/dominioncg/images/a/a0/Militia.jpg/revision/latest?cb=20100210165354",
       cost: 4,
       card_type: "Action",
@@ -293,7 +293,7 @@ def seed_markets
     puts "Seeding Market"
     Card.create(
       name: "Market", 
-      description: "+1 Card\n+1 Action\n+1 Buy\n +1 to Wallet",
+      description: "+1 Card, +1 Action, +1 Buy, +1 to Wallet",
       picture: "https://dominionstrategy.files.wordpress.com/2010/11/market.jpg",
       cost: 5,
       card_type: "Action",
