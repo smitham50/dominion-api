@@ -27,7 +27,7 @@ def seed_coppers
     puts "Seeding Copper"
     Card.create(
       name: "Copper",
-      description: "Add 1 to Wallet", 
+      description: "+1 to Wallet", 
       picture: "https://vignette.wikia.nocookie.net/dominioncg/images/b/b1/Copper2.jpg/revision/latest?cb=20100210171018",
       cost: 0,
       card_type: "Treasure",
@@ -46,7 +46,7 @@ def seed_silvers
     puts "Seeding Silver"
     Card.create(
       name: "Silver", 
-      description: "Add 2 to Wallet",
+      description: "+2 to Wallet",
       picture: "https://vignette.wikia.nocookie.net/dominioncg/images/b/b4/Silver2.jpg/revision/latest?cb=20100210171121",
       cost: 3,
       card_type: "Treasure",
@@ -65,8 +65,8 @@ def seed_golds
     puts "Seeding Gold"
     Card.create(
       name: "Gold", 
-      description: "Add 3 to Wallet",
-      picture: "https://www.ultraboardgames.com/dominion/gfx/gold.jpg",
+      description: "+3 to Wallet",
+      picture: "https://vignette.wikia.nocookie.net/dominioncg/images/a/ac/Gold2.jpg/revision/latest?cb=20100210171212",
       cost: 6,
       card_type: "Treasure",
       triggers: nil,
@@ -179,7 +179,7 @@ def seed_woodcutters
     puts "Seeding Woodcutter"
     Card.create(
       name: "Woodcutter", 
-      description: "+1 Buy, Add 2 to Wallet",
+      description: "+1 Buy, +2 to Wallet",
       picture: "https://dominionstrategy.files.wordpress.com/2010/12/woodcutter.jpg?w=584",
       cost: 3,
       card_type: "Action",
@@ -274,7 +274,7 @@ def seed_militias
     puts "Seeding Militia"
     Card.create(
       name: "Militia", 
-      description: "Add 2 to Wallet. Opponent must discard down to 3 or play Moat",
+      description: "+2 to Wallet. Opponent must discard down to 3 or play Moat",
       picture: "https://vignette.wikia.nocookie.net/dominioncg/images/a/a0/Militia.jpg/revision/latest?cb=20100210165354",
       cost: 4,
       card_type: "Action",
