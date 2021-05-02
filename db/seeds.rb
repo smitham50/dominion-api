@@ -28,7 +28,7 @@ def seed_coppers
     Card.create(
       name: "Copper",
       description: "+1 to Wallet", 
-      picture: "https://vignette.wikia.nocookie.net/dominioncg/images/b/b1/Copper2.jpg/revision/latest?cb=20100210171018",
+      picture: "/card-images/copper.jpg",
       cost: 0,
       card_type: "Treasure",
       triggers: nil,
@@ -47,7 +47,7 @@ def seed_silvers
     Card.create(
       name: "Silver", 
       description: "+2 to Wallet",
-      picture: "https://vignette.wikia.nocookie.net/dominioncg/images/b/b4/Silver2.jpg/revision/latest?cb=20100210171121",
+      picture: "/card-images/silver.jpg",
       cost: 3,
       card_type: "Treasure",
       triggers: nil,
@@ -66,7 +66,7 @@ def seed_golds
     Card.create(
       name: "Gold", 
       description: "+3 to Wallet",
-      picture: "https://vignette.wikia.nocookie.net/dominioncg/images/a/ac/Gold2.jpg/revision/latest?cb=20100210171212",
+      picture: "/card-images/gold.jpg",
       cost: 6,
       card_type: "Treasure",
       triggers: nil,
@@ -85,7 +85,7 @@ def seed_estates
     Card.create(
       name: "Estate", 
       description: "+1 Victory Point",
-      picture: "https://dominionstrategy.files.wordpress.com/2013/01/estate.jpg",
+      picture: "/card-images/estate.jpg",
       cost: 2,
       card_type: "Victory",
       triggers: nil,
@@ -104,7 +104,7 @@ def seed_duchies
     Card.create(
       name: "Duchy", 
       description: "+3 Victory Points",
-      picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMdt2Ta3gmOPntSSYtw2YJbMEzgBpSZwS0qTnve0zZ30gwBafW",
+      picture: "/card-images/duchy.jpg",
       cost: 5,
       card_type: "Victory",
       triggers: nil,
@@ -123,7 +123,7 @@ def seed_provinces
     Card.create(
       name: "Province", 
       description: "+6 Victory Points",
-      picture: "https://dominionstrategy.files.wordpress.com/2011/03/province.jpg",
+      picture: "/card-images/province.jpg",
       cost: 8,
       card_type: "Victory",
       triggers: nil,
@@ -142,7 +142,7 @@ def seed_cellars
     Card.create(
       name: "Cellar", 
       description: "+1 Action. Discard any number of cards from hand, draw 1 for each discarded",
-      picture: "https://dominionstrategy.files.wordpress.com/2010/11/cellar.jpg",
+      picture: "/card-images/cellar.jpg",
       cost: 2,
       card_type: "Action",
       triggers: ["+1ACTION", "CELLAR"],
@@ -161,7 +161,7 @@ def seed_moats
     Card.create(
       name: "Moat", 
       description: "Draw 2 cards or defend against Militia",
-      picture: "https://vignette.wikia.nocookie.net/dominioncg/images/f/fe/Moat.jpg/revision/latest?cb=20100213191143",
+      picture: "/card-images/moat.jpg",
       cost: 2,
       card_type: "Action",
       triggers: ["+2CARDS"],
@@ -180,7 +180,7 @@ def seed_woodcutters
     Card.create(
       name: "Woodcutter", 
       description: "+1 Buy, +2 to Wallet",
-      picture: "https://dominionstrategy.files.wordpress.com/2010/12/woodcutter.jpg?w=584",
+      picture: "/card-images/woodcutter.jpg",
       cost: 3,
       card_type: "Action",
       triggers: ["+1BUY", "+2WALLET"],
@@ -199,7 +199,7 @@ def seed_workshops
     Card.create(
       name: "Workshop", 
       description: "Gain card from supply costing up to 4",
-      picture: "https://vignette.wikia.nocookie.net/dominioncg/images/5/50/Workshop.jpg/revision/latest?cb=20100213191621",
+      picture: "/card-images/workshop.jpg",
       cost: 3,
       card_type: "Action",
       triggers: ["WORKSHOP"],
@@ -218,7 +218,7 @@ def seed_villages
     Card.create(
       name: "Village", 
       description: "Draw 1 card, +2 Actions",
-      picture: "https://dominionstrategy.files.wordpress.com/2011/01/village.jpg",
+      picture: "/card-images/village.jpg",
       cost: 3,
       card_type: "Action",
       triggers: ["+1CARD", "+2ACTIONS"],
@@ -237,7 +237,7 @@ def seed_smithies
     Card.create(
       name: "Smithy", 
       description: "Draw 3 cards",
-      picture: "https://vignette.wikia.nocookie.net/dominioncg/images/3/36/Smithy.jpg/revision/latest?cb=20100210165849",
+      picture: "/card-images/smithy.jpg",
       cost: 4,
       card_type: "Action",
       triggers: ["+3CARDS"],
@@ -256,7 +256,7 @@ def seed_remodels
     Card.create(
       name: "Remodel", 
       description: "Trash card from hand, gain card from supply costing up to 2 more",
-      picture: "http://www.dominiondeck.com/sites/default/files/imagecache/cards-landing/cards/remodel.jpg",
+      picture: "/card-images/remodel.jpg",
       cost: 4,
       card_type: "Action",
       triggers: ["REMODEL"],
@@ -275,7 +275,7 @@ def seed_militias
     Card.create(
       name: "Militia", 
       description: "+2 to Wallet. Opponent must discard down to 3 or play Moat",
-      picture: "https://vignette.wikia.nocookie.net/dominioncg/images/a/a0/Militia.jpg/revision/latest?cb=20100210165354",
+      picture: "/card-images/militia.jpg",
       cost: 4,
       card_type: "Action",
       triggers: ["ATTACK", "+2WALLET"],
@@ -294,7 +294,7 @@ def seed_markets
     Card.create(
       name: "Market", 
       description: "+1 Card, +1 Action, +1 Buy, +1 to Wallet",
-      picture: "https://dominionstrategy.files.wordpress.com/2010/11/market.jpg",
+      picture: "/card-images/market.jpg",
       cost: 5,
       card_type: "Action",
       triggers: ["+1CARD", "+1ACTION", "+1BUY", "+1WALLET"],
@@ -312,8 +312,8 @@ def seed_mines
     puts "Seeding Mine"
     Card.create(
       name: "Mine", 
-      description: "Trash a Copper or Silver and add a Silver or Gold to hand",
-      picture: "http://dominionstrategy.files.wordpress.com/2010/12/mine.jpg",
+      description: "/card-images/mine.jpg",
+      picture: ,
       cost: 5,
       card_type: "Action",
       triggers: ["MINE"],
@@ -328,7 +328,7 @@ seed_mines
 Card.create(
       name: "Trash", 
       description: nil,
-      picture: "http://wiki.dominionstrategy.com/images/thumb/e/ef/Trash.jpg/200px-Trash.jpg",
+      picture: "/card-images/trash.jpg",
       cost: nil,
       card_type: nil,
       triggers: nil,
@@ -338,3 +338,21 @@ Card.create(
     )
 
 
+# img urls
+# trash: "http://wiki.dominionstrategy.com/images/thumb/e/ef/Trash.jpg/200px-Trash.jpg"
+# mine: "http://dominionstrategy.files.wordpress.com/2010/12/mine.jpg"
+# market: "https://dominionstrategy.files.wordpress.com/2010/11/market.jpg"
+# militia: "https://vignette.wikia.nocookie.net/dominioncg/images/a/a0/Militia.jpg/revision/latest?cb=20100210165354"
+# remodel: "http://www.dominiondeck.com/sites/default/files/imagecache/cards-landing/cards/remodel.jpg"
+# smithy: "https://vignette.wikia.nocookie.net/dominioncg/images/3/36/Smithy.jpg/revision/latest?cb=20100210165849"
+# village: "https://dominionstrategy.files.wordpress.com/2011/01/village.jpg"
+# workshop: "https://vignette.wikia.nocookie.net/dominioncg/images/5/50/Workshop.jpg/revision/latest?cb=20100213191621"
+# woodcutter: "https://dominionstrategy.files.wordpress.com/2010/12/woodcutter.jpg?w=584"
+# moat: "https://vignette.wikia.nocookie.net/dominioncg/images/f/fe/Moat.jpg/revision/latest?cb=20100213191143"
+# cellar: "https://dominionstrategy.files.wordpress.com/2010/11/cellar.jpg"
+# province: "https://dominionstrategy.files.wordpress.com/2011/03/province.jpg"
+# duchy: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMdt2Ta3gmOPntSSYtw2YJbMEzgBpSZwS0qTnve0zZ30gwBafW"
+# estate: "https://dominionstrategy.files.wordpress.com/2013/01/estate.jpg"
+# gold: "https://vignette.wikia.nocookie.net/dominioncg/images/a/ac/Gold2.jpg/revision/latest?cb=20100210171212"
+# silver: "https://vignette.wikia.nocookie.net/dominioncg/images/b/b4/Silver2.jpg/revision/latest?cb=20100210171121"
+# copper: "https://vignette.wikia.nocookie.net/dominioncg/images/b/b1/Copper2.jpg/revision/latest?cb=20100210171018"
