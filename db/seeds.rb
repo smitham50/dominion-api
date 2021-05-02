@@ -313,7 +313,7 @@ def seed_mines
     Card.create(
       name: "Mine", 
       description: "/card-images/mine.jpg",
-      picture: ,
+      picture: "/card-images/mine.jpg",
       cost: 5,
       card_type: "Action",
       triggers: ["MINE"],
