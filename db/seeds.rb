@@ -312,7 +312,7 @@ def seed_mines
     puts "Seeding Mine"
     Card.create(
       name: "Mine", 
-      description: "/card-images/mine.jpg",
+      description: "Trash a Copper or Silver and add a Silver or Gold to hand",
       picture: "/card-images/mine.jpg",
       cost: 5,
       card_type: "Action",
