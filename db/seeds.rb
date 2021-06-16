@@ -23,7 +23,7 @@
 
 # Create 60 Coppers
 def seed_coppers
-  34.times do
+  20.times do
     puts "Seeding Copper"
     Card.create(
       name: "Copper",
